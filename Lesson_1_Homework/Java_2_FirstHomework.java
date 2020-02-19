@@ -30,11 +30,13 @@ public class Java_2_FirstHomework {
     //        "\n Swim: " + obstacle[i].doIt(zoo[i]));
     //      }
 
-	for (int i = 0; i < zoo.length; i++) {
-        System.out.println (zoo[i] + ". Say: " + zoo[i].voice());
+        for (int i = 0; i < zoo.length; i++) {
+            System.out.println("Член команды: " + zoo[i]);
+        }
+        for (int i = 0; i < zoo.length; i++) {
+            //System.out.println (zoo[i] + ". Say: " + zoo[i].voice());
 	    for (int z = 0; z < obstacle.length; z++){
-	        if (obstacle[z] == Obstacle.Water)
-	        System.out.println (obstacle[z].doIt(zoo[i]));
+            System.out.println ("Член команды: " + zoo[i].name + ". " + obstacle[z] + ". Результат преодоления: " +obstacle[z].doIt(zoo[i]));
 
             //System.out.println ("Run: " + obstacle[z].doIt(zoo[i]));
 
